@@ -1,0 +1,75 @@
+:root{
+    --Color1: #F4E7E1;
+    --Color2: #FF9B45;
+    --Color3: #D5451B;
+    --Color4: #521C0D;
+    --corfonte: #F4E7E1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.position-form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.container.footer{
+    padding: 10px ;
+    height: auto;
+}
+form {
+    /* background-color: rgb(243, 242, 242); */
+    background-color: var(--Color4);
+    width: 50%;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+form h1 {
+    color: var(--corfonte);
+    text-align: center;
+    margin-bottom: 20px;
+}
+form label {
+    font-size: 20px;
+    color: var(--corfonte);
+}
+.btn-submit {
+    background-color: var(--Color2);
+    border: 1px solid var(--Color3) ;
+    color: black ;
+    font-weight: bold ;
+}
+.btn-submit:hover {
+    background-color: var(--Color3);
+    border: 1px solid var(--Color2) ;
+    color: var(--corfonte) ;
+}
+
+.body-pedido {
+    background-image: url(../img/plano-fundo-pedido.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+.body-cadastro{
+    background-image: url(../img/foto-fundo-cadastro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+@media screen and (width < 768px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+    .position-form {
+        align-items: center;
+    }
+}
